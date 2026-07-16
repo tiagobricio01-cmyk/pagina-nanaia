@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nanaia Barra | Liderança Comunitária</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f0ff;
+}
+
+header{
+    background:#8A2BE2;
+    color:white;
+    text-align:center;
+    padding:35px;
+}
+
+nav{
+    background:#a855f7;
+    text-align:center;
+    padding:12px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+.dropdown{
+    display:inline-block;
+    position:relative;
+}
+
+.submenu{
+    display:none;
+    position:absolute;
+    background:#a855f7;
+    padding:12px 0;
+    border-radius:8px;
+    left:50%;
+    transform:translateX(-50%);
+    min-width:260px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    z-index:1000;
+}
+
+.submenu a{
+    display:block;
+    padding:10px 18px;
+    margin:0;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.submenu a:hover{
+    background:#9333ea;
+}
+
+.banner{
+    width:100%;
+    aspect-ratio:1574 / 500;
+    background:url("137792.png") center center no-repeat;
+    background-size:cover;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 0;
+}
+
+h2{
+    color:#6b21a8;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#6b21a8;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Nanaia Barra</h1>
+<p>Liderança Comunitária</p>
+</header>
+
+<nav>
+
+<a onclick="mostrarSecao('sobre')">Sobre</a>
+
+<div class="dropdown">
+
+<a class="botaoMenu" onclick="toggleMenu()">Ações</a>
+
+<div class="submenu" id="submenuAcoes">
+<a onclick="mostrarAcao('melhorias')">Melhorias no Bairro</a>
+<a onclick="mostrarAcao('eventos')">Eventos da Secretaria de Lazer e Turismo</a>
+<a onclick="mostrarAcao('projetos')">Projetos Sociais</a>
+<a onclick="mostrarAcao('reunioes')">Reuniões Comunitárias</a>
+</div>
+
+</div>
+
+</div>
+
+<a onclick="mostrarSecao('agenda de eventos')">Agenda de Eventos</a>
+<a onclick="mostrarSecao('datas importantes')">Datas Importantes</a>
+<a onclick="mostrarSecao('contato')">Contato</a>
+<a onclick="mostrarTodos()">Mostrar Todos</a>
+
+</nav>
+
+<section class="banner"></section>
+
+<section class="container secao" id="sobre">
+<h2>Sobre Nanaia Barra</h2>
+
+<div class="card">
+<p>
+Nanaia Barra é uma liderança comunitária comprometida com o
+desenvolvimento social, a participação popular e a busca por
+melhorias para a comunidade.
+</p>
+
+<p>
+O trabalho é voltado para ouvir os moradores, apresentar demandas
+às autoridades e promover ações que contribuam para o bem-estar coletivo.
+</p>
+</div>
+</section>
+
+<section class="container secao" id="acoes">
+<h2>Ações</h2>
+
+<div class="card" id="melhorias">
+<h3>Melhorias no Bairro</h3>
+<p>Solicitação de iluminação pública, pavimentação e limpeza urbana.</p>
+</div>
+
+<div class="card" id="eventos">
+<h3>Eventos da Secretaria de Lazer e Turismo</h3>
+
+<p>
+A Secretaria Adjunta de Lazer e Turismo de Ananindeua desempenha papel fundamental no planejamento, coordenação e execução de ações voltadas à promoção do lazer, da cultura e do desenvolvimento do turismo no município.
+</p>
+
+<img src="evento do trade 2.jpeg" style="width:400px;margin-top:10px;">
+<img src="evento do trade 3.jpeg" style="width:400px;margin-top:10px;">
+
+<video width="804" controls>
+<source src="fala da secretaria adjunta no trade.mp4" type="video/mp4">
+Seu navegador não suporta vídeo.
+</video>
+
+</div>
+
+<div class="card" id="projetos">
+<h3>Projetos Sociais</h3>
+
+<p>Iniciativas voltadas para jovens, famílias e fortalecimento da comunidade.</p>
+
+<img src="projeto olhar para o cidadao.jpeg" style="width:397px;margin-top:10px;">
+
+<img src="projeto curucamba.jpeg" style="width:397px;margin-top:10px;">
+
+<img src="projeto aula funcional 2.jpeg" style="width:800px;margin-top:10px;">
+
+<video width="800" controls>
+<source src="projeto aula funcional video 1.mp4" type="video/mp4">
+Seu navegador não suporta vídeo.
+</video>
+
+</div>
+
+<div class="card" id="reunioes">
+<h3>Reuniões Comunitárias</h3>
+<p>Espaço de diálogo entre moradores e representantes públicos.</p>
+</div>
+
+</section>
+
+<section>
+<section class="container secao" id="datas importantes">
+<h2>Datas Importantes</h2>
+<div class="card" id="datas importantes">
+<h3>Datas Importantes</h3>
+<p>A Liderança Comunitária Nanaia Barra apresenta à comunidade a agenda de datas importantes e comemorativas relacionadas ao município de Ananindeua. O objetivo é valorizar a história, a cultura e os acontecimentos que marcaram o desenvolvimento da nossa cidade, fortalecendo o sentimento de pertencimento e identidade entre os moradores.</p>
+</div>
+</section>
+
+<section>
+<section class="container secao" id="agenda de eventos">
+<h2>Agenda de Eventos</h2>
+<div class="card" id="agenda de eventos">
+<h3>Agenda de Eventos</h3>
+<p>A Liderança Comunitária Nanaia Barra, em parceria com a Secretaria Adjunta de Lazer e Turismo de Ananindeua, convida toda a população para participar da agenda de eventos e atividades voltadas ao fortalecimento da convivência comunitária, da cultura local e da valorização dos espaços de lazer do município.</p>
+</div>
+</section>
+
+<section class="container secao" id="contato">
+<h2>Contato</h2>
+
+<div class="card">
+<p>Email: nanaiabarra2020@gmail.com</p>
+<p>WhatsApp: (91) 98966-2255</p>
+<p>Instagram: <a href="https://www.instagram.com/nanaia.barra" target="_blank">@Nanaia.barra</a></p>
+</div>
+</section>
+
+
+<footer>
+<p>© 2026 | Nanaia Barra - Liderança Comunitária</p>
+</footer>
+
+<script>
+
+function mostrarSecao(id){
+
+const secoes = document.querySelectorAll(".secao");
+
+secoes.forEach(secao=>{
+secao.style.display="none";
+});
+
+document.getElementById(id).style.display="block";
+
+document.getElementById("submenuAcoes").style.display="none";
+
+}
+
+function mostrarTodos(){
+
+const secoes = document.querySelectorAll(".secao");
+
+secoes.forEach(secao=>{
+secao.style.display="block";
+});
+
+document.getElementById("submenuAcoes").style.display="none";
+
+}
+
+function toggleMenu(){
+
+const menu = document.getElementById("submenuAcoes");
+
+if(menu.style.display === "block"){
+menu.style.display="none";
+}else{
+menu.style.display="block";
+}
+
+}
+
+function mostrarAcao(id){
+
+const secoes = document.querySelectorAll(".secao");
+
+secoes.forEach(secao=>{
+secao.style.display="none";
+});
+
+document.getElementById("acoes").style.display="block";
+
+const cards = document.querySelectorAll("#acoes .card");
+
+cards.forEach(card=>{
+card.style.display="none";
+});
+
+document.getElementById(id).style.display="block";
+
+document.getElementById("submenuAcoes").style.display="none";
+
+}
+
+function fecharMenus(){
+document.querySelectorAll(".submenu").forEach(menu=>{
+menu.style.display="none";
+});
+}
+
+/* FECHAR MENU AO CLICAR FORA */
+
+document.addEventListener("click", function(event){
+
+const menu = document.getElementById("submenuAcoes");
+const botaoMenu = document.querySelector(".botaoMenu");
+
+if(menu && botaoMenu){
+
+if(!menu.contains(event.target) && !botaoMenu.contains(event.target)){
+menu.style.display = "none";
+}
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
